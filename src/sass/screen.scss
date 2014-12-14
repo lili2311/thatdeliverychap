@@ -112,11 +112,14 @@ a {
     text-decoration: underline;
   }
 }
+
 .underline {
   //text-decoration: underline;
   //text-transform: uppercase;
-  //font-style: italic;
+  font-weight: bold;
+  //color: #ce691c;
 }
+
 header {
   width: 100%;
   //background-color: $pale-blue;
@@ -206,7 +209,7 @@ a {
 
 }
 section {
-  margin: 0 auto;
+  margin: $padding-margin-value auto;
   padding: $padding-margin-value;
   min-height: 5em;
   max-width: 60em;
