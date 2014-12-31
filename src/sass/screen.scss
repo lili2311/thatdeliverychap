@@ -88,6 +88,7 @@ img {
   text-align: center;
   margin: $padding-margin-value/2 auto; 
 }
+
 .contact {
   padding: $padding-margin-value;
   max-width: 35em;
@@ -153,6 +154,7 @@ header {
     display: block;
   }
 }
+
 nav {
   width: 100%;
   margin: 0 auto;
@@ -183,11 +185,32 @@ nav {
     }
   }
 }
+
 a {
   text-decoration: none;
  }
+
 .more {
   display: none;
+}
+
+ul {
+  list-style: none;
+  margin: $padding-margin-value;
+  div {
+    display: inline-block;
+  }
+  .icon-container {
+    display: inline-block;
+  }
+  li {
+    display: block;
+    margin: $padding-margin-value;
+    p {
+      display: inline-block;
+      padding: $padding-margin-value 0;
+    }
+  }
 }
 .box {
   margin: $padding-margin-value auto;
@@ -208,6 +231,7 @@ a {
   }
 
 }
+
 section {
   margin: $padding-margin-value auto;
   padding: $padding-margin-value;
@@ -254,6 +278,7 @@ input[type=email] {
   border: 1px solid $grey;
   color: $black;
 }
+
 input[type=number] {
   display: block;
   padding: $padding-margin-value/2;
@@ -285,7 +310,6 @@ textarea {
   color: $black;
 
 }
-
 
 footer {
   padding: $padding-margin-value*2 $padding-margin-value;
