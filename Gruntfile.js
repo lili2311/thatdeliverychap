@@ -99,21 +99,21 @@ htmlmin: {                                     // Task
       collapseWhitespace: true
     },
     files: {                                   // Dictionary of files
-      'src/index.html': 'delpoy/index.html',     // 'destination': 'source'
-      'src/services.html': 'deploy/services.html',     // 'destination': 'source'
-      'src/contact.html': 'delpoy/contact.html',     // 'destination': 'source'
-      'src/about.html': 'delpoy/contact.html',     // 'destination': 'source'
-      'src/404.html': 'deploy/404.html',     // 'destination': 'source'
+      'deploy/index.html': 'src/index.html',     // 'destination': 'source'
+      'deploy/services.html': 'src/services.html',     // 'destination': 'source'
+      'deploy/contact.html': 'src/contact.html',     // 'destination': 'source'
+      'deploy/about.html': 'src/contact.html',     // 'destination': 'source'
+      'deploy/404.html': 'src/404.html',     // 'destination': 'source'
     }
   }
 },
- uglify: {
-    my_target: {
-      files: {
-        'src/js/script.js': ['deploy/js/script.js']
-      }
+uglify: {
+  my_target: {
+    files: {
+      'src/js/script.js': ['deploy/js/script.js']
     }
-  },
+  }
+},
 jshint: {
   files: ['Gruntfile.js', 'src/**/*.js'],
   options: {
