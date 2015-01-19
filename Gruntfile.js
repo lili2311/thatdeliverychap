@@ -17,39 +17,39 @@ grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 grunt.initConfig({
 pkg: grunt.file.readJSON('package.json'),
-// s3settings: grunt.file.readJSON('s3settings.json'),
+s3settings: grunt.file.readJSON('s3settings.json'),
 
-// aws_s3: {
-//   options: {
-//     accessKeyId: '<%= s3settings.key %>', // Use the variables
-//     secretAccessKey: '<%= s3settings.secret %>', // You can also use env variables
-//     region: '<%= s3settings.region %>',
-//     uploadConcurrency: 5, // 5 simultaneous uploads
-//     downloadConcurrency: 5 // 5 simultaneous downloads
-//   },
-//   live: {
-//     options: {
-//       bucket: '<%= s3settings.bucket %>',
-//       differential: false ,// Only uploads the files that have changed
-//       debug: false,
-// /**      params: {
-//         ContentEncoding: 'gzip', // applies to all the files!
-//         CacheControl: 'max-age=290304000, public',
-//       }**/
-//     },
-//     files: [
-//       {expand: true, cwd: 'src/', src: ['**'], dest: ''},
-//     ]
-//   },
-//   download: {
-//     options: {
-//       bucket: '<%= s3settings.bucket %>',
-//     },
-//     files: [
-//       {dest: '/', cwd: 'backup/', action: 'download'},
-//     ]
-//   }
-// },
+aws_s3: {
+  options: {
+    accessKeyId: '<%= s3settings.key %>', // Use the variables
+    secretAccessKey: '<%= s3settings.secret %>', // You can also use env variables
+    region: '<%= s3settings.region %>',
+    uploadConcurrency: 5, // 5 simultaneous uploads
+    downloadConcurrency: 5 // 5 simultaneous downloads
+  },
+  live: {
+    options: {
+      bucket: '<%= s3settings.bucket %>',
+      differential: false ,// Only uploads the files that have changed
+      debug: false,
+/**      params: {
+        ContentEncoding: 'gzip', // applies to all the files!
+        CacheControl: 'max-age=290304000, public',
+      }**/
+    },
+    files: [
+      {expand: true, cwd: 'src/', src: ['**'], dest: ''},
+    ]
+  },
+  download: {
+    options: {
+      bucket: '<%= s3settings.bucket %>',
+    },
+    files: [
+      {dest: '/', cwd: 'backup/', action: 'download'},
+    ]
+  }
+},
 copy: {
   main: {
     files: [
