@@ -165,10 +165,10 @@ nav {
     list-style: none;
     width: 100%;
     margin: 0 auto;
-    display: table;
+    display: flex;
     max-width: 40em;
     li {
-      display: table-cell;
+      flex-grow: 1;
       padding: $padding-margin-value 0;
       margin: 0 auto;
       text-align: center;
