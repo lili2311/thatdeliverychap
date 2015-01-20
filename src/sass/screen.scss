@@ -159,20 +159,25 @@ nav {
   width: 100%;
   margin: 0 auto;
   background-color: $pale-blue;
+  padding: 0 $padding-margin-value;
   ul {
     padding: 0;
-    margin: 0;
-    width: auto;
     list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    max-width: 40em;
     li {
-      display: inline-block;
-      padding: $padding-margin-value;
+      display: table-cell;
+      padding: $padding-margin-value 0;
       margin: 0 auto;
-      width: 32%;
-      min-width: 2em;
       text-align: center;
       font-size: 1.3em;
-
+      width:2em;
+      &:hover {
+        background-color: $pale-blue;
+        opacity:0.7;  
+      }
     }
   }
   a {
@@ -239,7 +244,7 @@ section {
   margin: $padding-margin-value auto;
   padding: $padding-margin-value;
   min-height: 5em;
-  max-width: 60em;
+  max-width: 40em;
   h3 {
     text-align: center;
   }
@@ -301,6 +306,9 @@ input[type=submit] {
   background-color: $pale-blue;
   color: $accent-color;
   font-family: "Mohave";
+  &:hover {
+    opacity:0.7;  
+  }
 
 }
 
