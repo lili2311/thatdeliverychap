@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 var mozjpeg = require('imagemin-mozjpeg');
 
-//grunt.loadNpmTasks('grunt-aws-s3');
+grunt.loadNpmTasks('grunt-aws-s3');
 grunt.loadNpmTasks('grunt-compass'); 
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -139,7 +139,7 @@ watch: {
 
 });
 
-// grunt.registerTask('deploy', ['aws_s3:live']);
+grunt.registerTask('deploy', ['aws_s3:live']);
 // grunt.registerTask('download', ['aws_s3:download']);
 grunt.registerTask('default', ['concat', 'uglify','cssmin', 'htmlmin']);
 
