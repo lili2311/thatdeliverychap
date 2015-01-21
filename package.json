@@ -10,6 +10,7 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-aws-s3": "~0.8.1"
+    "grunt-aws-s3": "~0.8.1",
+    "grunt-contrib-sass": "~0.8.1"
   }
 }
