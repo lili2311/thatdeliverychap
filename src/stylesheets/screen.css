@@ -154,11 +154,11 @@ body, html, div {
   height: 100%;
   font-family: "GeoSansLight", sans-serif;
   font-weight: 100;
-  font-size: 1em;
+  font-size: 100%;
   line-height: 1.3em;
   letter-spacing: 0.01em;
   color: #3c3c3c;
-  line-height: 1.3em; }
+  line-height: 1.6em; }
 
 img {
   max-width: 100%;
@@ -181,28 +181,35 @@ img {
   padding-bottom: 2em; }
 
 .icon-container {
-  width: 6em;
   height: 6em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  flex: 1;
+  width: auto;
+  text-align: right; }
+  .icon-container img {
+    padding-right: 2em; }
 
 .col {
-  width: 100%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  flex-grow: 1; }
+  margin: 0 auto;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; }
   .col h3 {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    flex: 2;
+    text-align: left;
+    flex-wrap: wrap; }
 
 .feedback {
-  padding-top: 2em;
+  padding-top: 4em;
   padding-bottom: 0; }
 
 .contact {
   margin: 0 auto;
   padding: 0;
-  width: 100%;
-  display: flex; }
+  width: 100%; }
 
 .van-img-container {
   margin: 0 auto;
@@ -223,7 +230,7 @@ a:hover {
 
 header {
   width: 100%;
-  background-image: radial-gradient(circle, #9AC9D7, #326979);
+  background-image: radial-gradient(circle, #9AC9D7, #568B9A);
   margin: 0 auto; }
   header h1, header h2 {
     margin: 0;
@@ -233,14 +240,18 @@ header {
     display: block;
     font-weight: bold;
     line-height: 1.3em;
-    color: #fcfcfc;
-    font-size: 2.6em; }
-  header h1 a:visited {
     color: #fcfcfc; }
+  header h1 {
+    font-size: 4em;
+    padding: 1em 0; }
+    header h1 a {
+      text-shadow: 0.1em 0.03em #568B9A; }
+      header h1 a:visited {
+        color: #fcfcfc; }
   header h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #B6E2EF;
-    text-shadow: 1px 0 1px #326979; }
+    text-shadow: 1px 0 1px #568B9A; }
   header .logo {
     margin: 0 auto;
     width: 100%;
@@ -251,6 +262,7 @@ nav {
   width: 100%;
   margin: 0 auto;
   background-color: #9AC9D7;
+  border-bottom: solid 0.5em #e5e5e5;
   padding: 0 2em; }
   nav ul {
     padding: 0;
@@ -270,11 +282,11 @@ nav {
         background-color: #9AC9D7;
         opacity: 0.7; }
   nav a {
-    color: #326979; }
+    color: #568B9A; }
     nav a:hover {
       color: #fcfcfc; }
     nav a:visited {
-      color: #326979; }
+      color: #568B9A; }
 
 a {
   text-decoration: none; }
@@ -297,8 +309,8 @@ ul {
       padding: 2em 0; }
 
 .box {
-  margin: 2em auto;
-  width: 90%;
+  margin: 2em 0;
+  width: 100%;
   display: block;
   min-height: 15em;
   border-bottom-width: 0;
@@ -316,21 +328,22 @@ ul {
     display: inline-block; }
 
 section {
-  padding: 4em;
+  padding: 4em 2em;
   min-height: 5em;
   width: 100%; }
   section h3 {
     text-align: center;
     padding: 2em 0; }
   section p {
-    padding: 1em;
+    padding: 0.5em;
     margin: 0 auto;
     text-align: center;
-    line-height: 1.3em; }
+    line-height: 1.3em;
+    font-size: 1.1em; }
   section a:visited {
-    color: #326979; }
+    color: #568B9A; }
   section:nth-child(odd) {
-    background-color: #eee; }
+    background-color: #f4f4f4; }
 
 form {
   margin: 0 auto;
@@ -368,12 +381,13 @@ input[type=submit] {
   margin: 0 auto 2em auto;
   width: 100%;
   border: none;
+  opacity: 0.7;
   box-shadow: 0.5em 0.5em 0px rgba(0, 0, 0, 0.1);
   background-color: #9AC9D7;
-  color: #326979;
+  color: #568B9A;
   font-family: "Mohave"; }
   input[type=submit]:hover {
-    opacity: 0.7; }
+    opacity: 1; }
 
 textarea {
   display: block;
@@ -398,7 +412,15 @@ footer {
     footer nav li {
       display: inline-block;
       width: auto;
-      padding: 0;
-      font-size: 1em; }
+      padding: 0; }
+
+@media (max-width: 500px) {
+  .col {
+    flex-direction: column; }
+    .col h3 {
+      text-align: center; }
+
+  .icon-container img {
+    padding: 0; } }
 
 /*# sourceMappingURL=screen.css.map */
