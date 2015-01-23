@@ -48,22 +48,25 @@ img {
 .icon-container {
   width: $icon-size;
   height: $icon-size;
-  margin: $padding-margin-value/2 auto; 
+  margin: 0 auto; 
 }
 
 .col {
   width: 100%;
-  max-width: 15em;
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  margin: $padding-margin-value/2 auto; 
+  // margin: $padding-margin-value/2 auto; 
+  flex-grow: 1;
 }
 
 .contact {
-  padding: $padding-margin-value;
-  max-width: 35em;
   margin:0 auto;
+  display: flex;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  max-width: 40em;
 }
 
 .van-img-container {
@@ -149,6 +152,9 @@ nav {
         background-color: $pale-blue;
         opacity:0.7;  
       }
+      &:nth-child {
+        text-align: left;
+      }
     }
   }
   a {
@@ -218,6 +224,7 @@ section {
   max-width: 40em;
   h3 {
     text-align: center;
+    padding: $padding-margin-value 0;
   }
   p {
     padding: $padding-margin-value/2;

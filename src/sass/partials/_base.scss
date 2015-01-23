@@ -1,0 +1,11 @@
+@import "colours";
+@import "reset";
+@import "typography";
+@import "mixins";
+@import "buttons";
+
+$icon-size: 6em;
+$line-height: 1.3em;
+$accent-color: $dark-blue;
+$padding-margin-value: 2em;
+$link-color: $accent-color;

@@ -131,7 +131,7 @@ grunt.initConfig({
     css: {
       files: 'src/sass/screen.scss',
       tasks: ['sass']
-    },
+    }
   //   jshint: {
   //     files: ['<%= jshint.files %>'],
   //     tasks: ['jshint']
