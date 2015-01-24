@@ -56,7 +56,7 @@ grunt.initConfig({
     main: {
       files: [
         // includes files within path
-        {expand: false, src: ['*.css'], dest: 'src/css/', filter: 'isFile'},
+        {expand: false, src: ['*.css'], dest: 'src/stylesheets/', filter: 'isFile'},
       ]
     }
   },
@@ -89,7 +89,7 @@ grunt.initConfig({
   cssmin: {
     combine: {
       files: {
-        'deploy/css/screen.css': ['src/stylesheets/screen.css']
+        'deploy/stylesheets/screen.css': ['src/stylesheets/screen.css']
       }
     }
   },
@@ -105,6 +105,8 @@ grunt.initConfig({
         'deploy/contact.html': 'src/contact.html',     // 'destination': 'source'
         'deploy/about.html': 'src/contact.html',     // 'destination': 'source'
         'deploy/404.html': 'src/404.html',     // 'destination': 'source'
+        'deploy/feedback.html': 'src/404.html',     // 'destination': 'source'
+
       }
     }
   },
@@ -140,9 +142,9 @@ grunt.initConfig({
 
 });
 
-grunt.registerTask('deploy', ['aws_s3:live']);
+grunt.registerTask('deploy', ['default', 'aws_s3:live']);
 //grunt.registerTask('download', ['aws_s3:download']);
-grunt.registerTask('default', ['concat', 'uglify','cssmin', 'htmlmin']);
+grunt.registerTask('default', ['sass', 'concat', 'uglify', 'cssmin', 'htmlmin']);
 // grunt.registerTask('watch', ['watch']);
 
 };
