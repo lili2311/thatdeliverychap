@@ -354,9 +354,10 @@ ul {
       flex-direction: row;
       text-align: center;
       margin: 0; }
+      .box ul li p {
+        text-align: left; }
   .box p {
-    flex: 2;
-    text-align: left; }
+    flex: 2; }
 
 section {
   padding: 4em 2em;
