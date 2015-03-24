@@ -1,0 +1,1 @@
+function initialize(){var a=new google.maps.LatLng(53.260998,-3.501757),b={zoom:19,center:a};map=new google.maps.Map(document.getElementById("map-canvas"),b);new google.maps.Marker({position:a,map:map,title:"That Delivery Guy"})}var map;google.maps.event.addDomListener(window,"load",initialize);

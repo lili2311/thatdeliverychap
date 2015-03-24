@@ -72,7 +72,7 @@ grunt.initConfig({
       files: [{
         expand: true,                  // Enable dynamic expansion
         cwd: 'src/img/',                   // Src matches are relative to this path
-        src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+        src: ['**/*.{png,jpg}'],   // Actual patterns to match
         dest: 'deploy/img/'                  // Destination path prefix
       }]
     }
@@ -103,9 +103,9 @@ grunt.initConfig({
         'deploy/index.html': 'src/index.html',     // 'destination': 'source'
         'deploy/services.html': 'src/services.html',     // 'destination': 'source'
         'deploy/contact.html': 'src/contact.html',     // 'destination': 'source'
-        'deploy/about.html': 'src/contact.html',     // 'destination': 'source'
+        'deploy/about.html': 'src/about.html',     // 'destination': 'source'
         'deploy/404.html': 'src/404.html',     // 'destination': 'source'
-        'deploy/feedback.html': 'src/404.html',     // 'destination': 'source'
+        'deploy/feedback.html': 'src/feedback.html',     // 'destination': 'source'
 
       }
     }
