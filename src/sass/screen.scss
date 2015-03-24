@@ -51,7 +51,7 @@ img {
 }
 
 .icon-container {
-  // width: $icon-size;
+  width: $icon-size;
   height: $icon-size;
   margin: 0 auto; 
   flex: 1;
@@ -63,16 +63,16 @@ img {
 }
 
 .col { 
-  // vertical-align: top;
-  // text-align: center;
+  vertical-align: top;
+  text-align: center;
   margin:0 auto;
   padding-top: $padding-margin-value;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width:100%;
-  // margin-bottom: $padding-margin-value auto; 
-  // flex-grow: 1;
+  margin-bottom: $padding-margin-value auto; 
+  flex-grow: 1;
   h3 {
     padding-bottom: 0;
     flex: 2;
@@ -94,8 +94,8 @@ img {
   margin: 0 auto;
   padding: 0;
   width: 100%; 
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .van-img-container {
@@ -121,15 +121,11 @@ a {
 }
 
 .underline {
-  //text-decoration: underline;
-  //text-transform: uppercase;
-  font-weight: bold;
-  //color: #ce691c;
 }
 
 header {
   width: 100%;
-  //background-color: $pale-blue;
+  background-color: $pale-blue;
   background-image: radial-gradient(circle, $pale-blue, $accent-color);
   margin: 0 auto;
   h1, h2 {
@@ -173,7 +169,7 @@ nav {
   width: 100%;
   margin: 0 auto;
   background-color: $pale-blue;
-  border-bottom:solid 0.5em $darker-grey;
+  border-bottom:solid 0.5em $grey;
   padding: 0 $padding-margin-value;
   ul {
     padding: 0;
@@ -285,31 +281,31 @@ ul {
   }
 }
 
-// section {
-//   // margin: $padding-margin-value auto;
-//   padding: $padding-margin-value*2 $padding-margin-value;
-//   min-height: 5em;
-//   width: 100%;
-//   h3 {
-//     text-align: center;
-//     padding: $padding-margin-value 0;
-//   }
-//   p {
-//     padding: $padding-margin-value/4;
-//     margin: 0 auto;
-//     text-align: center;
-//     line-height: 1.3em;
-//     font-size: 1.1em;
-//   }
-//   a {
-//     &:visited {
-//       color: $link-color;
-//     }
-//   }
-//   &:nth-child(odd) {
-//     background-color: $grey-white;
-//   }
-// }
+section {
+  // margin: $padding-margin-value auto;
+  padding: $padding-margin-value*2 $padding-margin-value;
+  min-height: 5em;
+  width: 100%;
+  h3 {
+    text-align: center;
+    padding: $padding-margin-value 0;
+  }
+  p {
+    padding: $padding-margin-value/4;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.1em;
+  }
+  a {
+    &:visited {
+      color: $link-color;
+    }
+  }
+  &:nth-child(odd) {
+    background-color: $grey-white;
+  }
+}
 
 form {
   margin: 0 auto;

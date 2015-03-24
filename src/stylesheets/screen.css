@@ -181,6 +181,7 @@ img {
   padding-bottom: 2em; }
 
 .icon-container {
+  width: 6em;
   height: 6em;
   margin: 0 auto;
   flex: 1;
@@ -190,12 +191,16 @@ img {
     padding-right: 2em; }
 
 .col {
+  vertical-align: top;
+  text-align: center;
   margin: 0 auto;
   padding-top: 2em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2em auto;
+  flex-grow: 1; }
   .col h3 {
     padding-bottom: 0;
     flex: 2;
@@ -213,7 +218,9 @@ img {
 .contact {
   margin: 0 auto;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
 
 .van-img-container {
   margin: 2em;
@@ -233,11 +240,9 @@ a {
   a:hover {
     text-decoration: underline; }
 
-.underline {
-  font-weight: bold; }
-
 header {
   width: 100%;
+  background-color: #9AC9D7;
   background-image: radial-gradient(circle, #9AC9D7, #568B9A);
   margin: 0 auto; }
   header h1, header h2 {
@@ -273,7 +278,7 @@ nav {
   width: 100%;
   margin: 0 auto;
   background-color: #9AC9D7;
-  border-bottom: solid 0.5em #e5e5e5;
+  border-bottom: solid 0.5em #dedede;
   padding: 0 2em; }
   nav ul {
     padding: 0;
@@ -360,6 +365,24 @@ ul {
         text-align: left; }
   .box p {
     flex: 2; }
+
+section {
+  padding: 4em 2em;
+  min-height: 5em;
+  width: 100%; }
+  section h3 {
+    text-align: center;
+    padding: 2em 0; }
+  section p {
+    padding: 0.5em;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.1em; }
+  section a:visited {
+    color: #568B9A; }
+  section:nth-child(odd) {
+    background-color: #f4f4f4; }
 
 form {
   margin: 0 auto;
