@@ -90,6 +90,7 @@ img {
   list-style: circle;
   margin: 0;
 }
+
 .contact {
   margin: 0 auto;
   padding: 0;
@@ -271,9 +272,9 @@ ul {
     flex-direction: row;
     text-align: center;
     margin:0;
-    p {
-          text-align:left;
-    }
+      p {
+        text-align:left;
+      }
     }
   }
   p {
@@ -282,7 +283,7 @@ ul {
 }
 
 section {
-  // margin: $padding-margin-value auto;
+  /*margin: $padding-margin-value auto;*/
   padding: $padding-margin-value*2 $padding-margin-value;
   min-height: 5em;
   width: 100%;

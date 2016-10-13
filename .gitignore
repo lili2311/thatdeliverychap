@@ -1,2 +1,3 @@
+.sass-cache/*
 node_modules/
 s3settings.json

@@ -367,6 +367,7 @@ ul {
     flex: 2; }
 
 section {
+  /*margin: $padding-margin-value auto;*/
   padding: 4em 2em;
   min-height: 5em;
   width: 100%; }
